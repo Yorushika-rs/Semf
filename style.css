@@ -1,0 +1,53 @@
+body{
+  display: flex;
+  background-color: rgb(50, 45, 66);
+}
+
+.semaforo1, .semaforo2 {
+  margin: auto;
+  display: grid;
+  place-items: center;
+  width: 280px;
+  height: 500px;
+  background-color: black;
+  border-radius: 1.5cm;
+}
+
+.button {
+  height: 40px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  opacity: 0.4;
+}
+
+.peaton {
+  margin: auto;
+  display: grid;
+  place-items: center;
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  border-radius: 1.5cm;
+}
+
+#red1, #red2 {
+  background-color: red;
+}
+
+#yellow1, #yellow2 {
+  background-color: orange;
+}
+
+#green1, #green2 {
+  background-color: greenyellow;
+}
+
+#color {
+  background-color: red;
+}
