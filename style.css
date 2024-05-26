@@ -36,6 +36,10 @@ body{
   border-radius: 1.5cm;
 }
 
+#color {
+  opacity: 1;
+}
+
 #red1, #red2 {
   background-color: red;
 }
