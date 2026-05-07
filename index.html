@@ -4,24 +4,43 @@
   <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Simulador de Semáforos - Lógica de Programación</title>
 </head>
 <body>
-  <button class="button" id="button1">Change</button>
-  <div class="semaforo1">
-    <div class="circle" id="green1"></div>
-    <div class="circle" id="yellow1"></div>
-    <div class="circle" id="red1"></div>
-  </div>
-  <div class="semaforo2">
-    <div class="circle" id="green2"></div>
-    <div class="circle" id="yellow2"></div>
-    <div class="circle" id="red2"></div>
-  </div>
-  <button class="button" id="button2">Change</button>
-  <div class="peaton">
-    <div class="circle" id="color"></div>
-  </div>
-  <script src= "index.js"></script>
+
+  <header class="info-section">
+    <h1>Simulador Lógico de Tránsito</h1>
+    <p><strong>Actividad Universitaria:</strong> Implementación de sistemas de control asíncronos.</p>
+    <p><strong>Propósito:</strong> Demostrar la gestión de estados y tiempos de espera (Promises/Async-Await) en un entorno de seguridad vial.</p>
+  </header>
+
+  <main class="container">
+    <div class="control-group">
+      <button class="button" id="button1">Solicitar Cruce 1</button>
+      <div class="semaforo">
+        <div class="circle" id="red1"></div>
+        <div class="circle" id="yellow1"></div>
+        <div class="circle" id="green1"></div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="peaton">
+        <p>PEATÓN</p>
+        <div class="circle" id="color"></div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <button class="button" id="button2">Solicitar Cruce 2</button>
+      <div class="semaforo">
+        <div class="circle" id="red2"></div>
+        <div class="circle" id="yellow2"></div>
+        <div class="circle" id="green2"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
 </body>
 </html>
