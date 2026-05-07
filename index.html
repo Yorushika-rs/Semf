@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador de Semáforos - Lógica de Programación</title>
+  <title>Simulador de Semáforos - Proyecto Universitario</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  <header class="info-section">
-    <h1>Simulador Lógico de Tránsito</h1>
-    <p><strong>Actividad Universitaria:</strong> Implementación de sistemas de control asíncronos.</p>
-    <p><strong>Propósito:</strong> Demostrar la gestión de estados y tiempos de espera (Promises/Async-Await) en un entorno de seguridad vial.</p>
-  </header>
+  <div class="main-wrapper">
+    <header class="header-info">
+      <h1>Simulador Lógico de Tránsito</h1>
+      <p><strong>Actividad:</strong> Lógica de Programación y Asincronía</p>
+      <p><strong>Propósito:</strong> Demostrar el manejo de estados y promesas en una red de semáforos interconectados.</p>
+    </header>
 
-  <main class="container">
-    <div class="control-group">
-      <button class="button" id="button1">Solicitar Cruce 1</button>
-      <div class="semaforo">
-        <div class="circle" id="red1"></div>
-        <div class="circle" id="yellow1"></div>
+    <main class="dashboard">
+      
+      <div class="control-unit">
+        <button class="button" id="button1">Solicitar Cruce 1</button>
+        <div class="semaforo">
+          <div class="circle" id="red1"></div>
+          <div class="circle" id="yellow1"></div>
+          <div class="circle" id="green1"></div>
+        </div>
+      </div>
+
+      <div class="control-unit">
+        <div class="peaton-container">
+          <span class="label">PEATÓN</span>
+          <div class="circle" id="color"></div>
+        </div>
+      </div>
+
+      <div class="control-unit">
+        <button class="button" id="button2">Solicitar Cruce 2</button>
+        <div class="semaforo">
+          <div class="circle" id="red2"></div>
+          <div class="circle" id="yellow2"></div>
+          <div class="circle" id="green2"></div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+" id="yellow1"></div>
         <div class="circle" id="green1"></div>
       </div>
     </div>
