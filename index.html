@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador de Semáforos - Proyecto Universitario</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Simulador de Semáforos - Universidad</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="main-wrapper">
-    <header class="header-info">
-      <h1>Simulador Lógico de Tránsito</h1>
-      <p><strong>Actividad:</strong> Lógica de Programación y Asincronía</p>
-      <p><strong>Propósito:</strong> Demostrar el manejo de estados y promesas en una red de semáforos interconectados.</p>
+  <div class="container">
+    <header class="header">
+      <h1>SIMULADOR DE TRÁNSITO</h1>
+      <div class="info-box">
+        <p><strong>Actividad:</strong> Lógica de Semáforos (Asincronía JS)</p>
+        <p><strong>Propósito:</strong> Demostrar la gestión de tiempos y estados mediante código.</p>
+      </div>
     </header>
 
-    <main class="dashboard">
+    <div class="dashboard">
       
-      <div class="control-unit">
-        <button class="button" id="button1">Solicitar Cruce 1</button>
+      <div class="column">
+        <button class="button" id="button1">CAMBIAR 1</button>
         <div class="semaforo">
           <div class="circle" id="red1"></div>
           <div class="circle" id="yellow1"></div>
@@ -26,15 +28,15 @@
         </div>
       </div>
 
-      <div class="control-unit">
-        <div class="peaton-container">
+      <div class="column">
+        <div class="peaton-card">
           <span class="label">PEATÓN</span>
           <div class="circle" id="color"></div>
         </div>
       </div>
 
-      <div class="control-unit">
-        <button class="button" id="button2">Solicitar Cruce 2</button>
+      <div class="column">
+        <button class="button" id="button2">CAMBIAR 2</button>
         <div class="semaforo">
           <div class="circle" id="red2"></div>
           <div class="circle" id="yellow2"></div>
@@ -42,33 +44,8 @@
         </div>
       </div>
 
-    </main>
+    </div>
   </div>
-
-  <script src="index.js"></script>
-</body>
-</html>
-" id="yellow1"></div>
-        <div class="circle" id="green1"></div>
-      </div>
-    </div>
-
-    <div class="control-group">
-      <div class="peaton">
-        <p>PEATÓN</p>
-        <div class="circle" id="color"></div>
-      </div>
-    </div>
-
-    <div class="control-group">
-      <button class="button" id="button2">Solicitar Cruce 2</button>
-      <div class="semaforo">
-        <div class="circle" id="red2"></div>
-        <div class="circle" id="yellow2"></div>
-        <div class="circle" id="green2"></div>
-      </div>
-    </div>
-  </main>
 
   <script src="index.js"></script>
 </body>
