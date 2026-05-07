@@ -1,40 +1,99 @@
-body{
+/* Configuración General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1d;
+  color: white;
+  margin: 0;
   display: flex;
-  background-color: rgb(50, 45, 66);
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.semaforo1, .semaforo2 {
-  margin: auto;
-  display: grid;
-  place-items: center;
-  width: 280px;
-  height: 500px;
-  background-color: black;
-  border-radius: 1.5cm;
+/* Sección de Información */
+.info-section {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  border-bottom: 2px solid #333;
+  margin-bottom: 2rem;
 }
 
-.button {
-  height: 40px;
-  margin: auto;
-  border-radius: 5px;
+.info-section h1 { margin: 0; color: #00d4ff; }
+.info-section p { margin: 5px 0; opacity: 0.8; }
+
+/* Contenedor Principal */
+.container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.circle {
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  opacity: 0.4;
+.control-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Estilo Semáforo */
+.semaforo, .peaton {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 0 #222, 0 15px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .peaton {
-  margin: auto;
-  display: grid;
-  place-items: center;
-  width: 250px;
-  height: 250px;
-  background-color: black;
-  border-radius: 1.5cm;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
+
+/* Luces */
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #111;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+  border: 4px solid rgba(0,0,0,0.2);
+}
+
+/* Colores Encendidos (Glow Effect) */
+#red1, #red2 { background-color: #ff3b3b; }
+#yellow1, #yellow2 { background-color: #ffca28; }
+#green1, #green2 { background-color: #4caf50; }
+#color { background-color: #ff3b3b; }
+
+/* Cuando la opacidad es 1, añadimos brillo */
+.circle[style*="opacity: 1"] {
+  box-shadow: 0 0 30px currentcolor;
+  opacity: 1 !important;
+}
+
+/* Botones */
+.button {
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #00d4ff;
+  border: none;
+  border-radius: 8px;
+  color: #111;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.button:hover { background-color: #0099cc; }
+.button:active { transform: scale(0.95); }
 
 #color {
   opacity: 1;
